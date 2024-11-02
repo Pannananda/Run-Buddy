@@ -1,6 +1,8 @@
-*{
+/* Universal Selector */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;  /*နောက်ထပ်  content-boxရှိသေးတယ်*/
 }
 
 /* This is body design */
@@ -8,6 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #39a6b2;
 }
+/* nav starts */
  header {
     background-color: #39a6b2;
     padding: 20px 35px;
@@ -18,7 +21,7 @@ body {
     font-weight:bold;
     font-size: 36px;
     margin: 0;
-    display: inline;
+    display: inline; /*h1 သည်ပင်ကိုယ်က blok ဖြစ်သော်လဲ ယခု inline ဖြစ်ရမယ်*/
  }
 
  header a{
@@ -39,9 +42,148 @@ header nav {
     font-weight: lighter;
     font-size: 22px;
  }
+ /* nave ends */
 
  footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
  }
+
+ footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+ }
+ /* footer sterts */
+ footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+ }
+
+ footer a {
+    color: #024e76;
+ }
+ /* footer ends */
+
+ /*hero section starts */
+.hero {
+   padding: 60Px;
+   background-image: url('../images/hero-bg.jpg');
+   height: 600px;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.hero-form {
+   background-color: #fce138;
+   padding: 20px;
+   width: 500px;
+   color: #024e76;
+   border-style: solid;
+   border-width: 3px;border-color: #024e76;
+   /* border: solid 3px #024e76; */
+   position: absolute;
+   bottom: 120px;
+   right: 140px;
+}
+
+.hero-form h3 {
+   font-size: 24px;
+   margin: 0;
+}
+
+.hero-form p {
+   margin: 5px 0 15px 0;
+}
+
+.form-input {
+   border: 1px solid #024e76;
+   display: block;
+   padding: 7px 15px;
+   font-size: 16px;
+   color: #024e76;
+   width: 100%;
+   margin-bottom: 15px ;
+   border-radius: 5px;
+}
+
+.hero-form label {
+   margin: 0 5px;
+}
+
+.hero-form button {
+   padding: 10px 20px;
+   font-size: 16px;
+   color: #fce138;
+   background-color: #024e76;
+   border: none;
+   border-radius: 5px;
+}
+
+section {
+   padding: 60px;
+}
+/* Hero Section Ends */
+
+
+.intro {
+   text-align: center;
+}
+
+.intro p {
+   line-height: 1.7;
+   font-size: 20px;
+   margin: 0 auto;
+   width: 80%;
+   color: #39a6b2;
+}
+
+.steps {
+   text-align: center;
+   background: #fce138;
+}
+
+.steps div {
+   margin-bottom: 80px;
+}
+
+.steps img {
+   width: 15%;
+   margin: 10px 0;
+}
+
+.steps h3 {
+   color: #024e76;
+   font-size: 46px;
+   margin-top: 10px;
+}
+
+.steps p {
+   color: #024e76;
+   font-size: 23px;
+}
+
+.steps span {
+   font-size: 38px;
+}
+
+.section-tetle {
+   font-size: 55px;
+   color: #024e76;
+   margin-bottom: 35px;
+   padding: 0 100px 20px 100px;
+   display: inline-block;
+   border-bottom: 3px solid;
+}
+
+.primary-border {
+   border-color: #fce138;
+}
+
+.secondary-border {
+   border-color: #39a6b2;
+}
